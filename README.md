@@ -1,4 +1,4 @@
-# Dat.Gui - A Javascript controller library, repackaged for Meteor.
+# dat.gui - A Javascript controller library, repackaged for Meteor.
 
 This is a simple Meteor package for including dat.gui.js which is a lightweight controller library.
 
