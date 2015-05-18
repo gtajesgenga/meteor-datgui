@@ -10,9 +10,9 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Package.onUse(function(api) {
-  api.versionsFrom('1.0.0');
-  api.addFiles('lib/dat.gui.js', 'client');
-  api.export('dat.GUI');
+Package.on_use(function(api) {
+  api.versionsFrom('0.9.0');
+  api.export('datGUI', 'client');
+  api.add_files('dat.gui.js','client');
 });
 
