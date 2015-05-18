@@ -4,19 +4,15 @@ Package.describe({
   // Brief, one-line summary of the package.
   summary: 'meteor-datgui is a wrapper for meteor of dat.gui, which is a lightweight controller library ',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/PolGuixe/meteor-datgui',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
-  api.addFiles('meteor-datgui.js');
+  api.versionsFrom('1.0.0');
+  api.addFiles('lib/dat.gui.js', 'client');
+  api.export('dat.GUI');
 });
 
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('polguixe:meteor-datgui');
-  api.addFiles('meteor-datgui-tests.js');
-});
