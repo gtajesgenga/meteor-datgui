@@ -12,7 +12,7 @@
  */
 
 /** @namespace */
-var dat = dat || {};
+dat = dat || {};
 
 /** @namespace */
 dat.gui = dat.gui || {};
@@ -1529,7 +1529,7 @@ dat.color.interpret = (function (toString, common) {
 dat.utils.common);
 
 
-datGUI = dat.gui.GUI = (function (css, saveDialogueContents, styleSheet, controllerFactory, Controller, BooleanController, FunctionController, NumberControllerBox, NumberControllerSlider, OptionController, ColorController, requestAnimationFrame, CenteredDiv, dom, common) {
+dat.GUI = dat.gui.GUI = (function (css, saveDialogueContents, styleSheet, controllerFactory, Controller, BooleanController, FunctionController, NumberControllerBox, NumberControllerSlider, OptionController, ColorController, requestAnimationFrame, CenteredDiv, dom, common) {
 
   css.inject(styleSheet);
 
