@@ -1,6 +1,6 @@
 Package.describe({
   name: 'polguixe:meteor-datgui',
-  version: '0.5.1_3',
+  version: '0.5.1_4',
   // Brief, one-line summary of the package.
   summary: 'meteor-datgui is a wrapper for meteor of dat.gui, which is a lightweight controller library ',
   // URL to the Git repository containing the source code for this package.
