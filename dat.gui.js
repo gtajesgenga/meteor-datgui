@@ -1584,11 +1584,13 @@ dat.GUI = dat.gui.GUI = (function (css, saveDialogueContents, styleSheet, contro
 
     var _this = this;
 
+    params = params || {};
+
     /**
      * Outermost DOM Element
      * @type DOMElement
      */
-    this.domElement = document.createElement('div');
+    this.domElement = params.domElement ? params.domElement : document.createElement('div');
     this.__ul = document.createElement('ul');
     this.domElement.appendChild(this.__ul);
 
@@ -1629,8 +1631,6 @@ dat.GUI = dat.gui.GUI = (function (css, saveDialogueContents, styleSheet, contro
     this.__rememberedObjectIndecesToControllers = [];
 
     this.__listening = [];
-
-    params = params || {};
 
     // Default parameters
     params = common.defaults(params, {
@@ -3039,7 +3039,7 @@ dat.controllers.ColorController = (function (Controller, dom, Color, interpret, 
     var value_field = document.createElement('div');
 
     common.extend(this.__selector.style, {
-      width: '122px',
+      width: '124px',
       height: '102px',
       padding: '3px',
       backgroundColor: '#222',
